@@ -1,9 +1,9 @@
 {
   "name": "mylib2",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "dependencies": {
     "tslib": "^2.3.0",
-    "mylib": "0.0.1"
+    "mylib": "0.1.0"
   },
   "type": "commonjs",
   "main": "./src/index.js",
