@@ -2,7 +2,7 @@
   "extends": "nx/presets/npm.json",
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "release": {
-    "projects": ["mylib", "mylib2", "my-app"],
+    "projects": ["mylib", "mylib2"],
     "projectsRelationship": "independent",
     "changelog": {
       "projectChangelogs": {
