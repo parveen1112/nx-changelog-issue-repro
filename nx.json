@@ -15,7 +15,13 @@
       "commitMessage": "chore(release): publish [skip ci]"
     },
     "version": {
-      "conventionalCommits": true
+      "generatorOptions": {
+        "specifierSource": "conventional-commits",
+        "packageRoot": "dist/packages/{projectName}",
+        "currentVersionResolver": "git-tag",
+        "fallbackCurrentVersionResolver": "disk",
+        "updateDependents": true
+      }
     }
   },
   "plugins": [
@@ -68,6 +74,11 @@
       "cache": true,
       "dependsOn": ["^build"],
       "inputs": ["default", "^default"]
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/packages/{projectName}"
+      }
     }
   },
   "pluginsConfig": {
